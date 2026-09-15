@@ -10,10 +10,10 @@ Ngày: `2026-09-15`
 | Mục | Giá trị |
 | --- | --- |
 | Công cụ | CVAT |
-| Thời gian gán `clip_02` (warm-up) | `...` phút |
-| Thời gian gán `clip_01` | `...` phút |
+| Thời gian gán `clip_02` (warm-up) | `15` phút |
+| Thời gian gán `clip_01` | `45` phút |
 | Số track đã vẽ trong `clip_01` | 8 |
-| Số keyframe trung bình mỗi track | `...` (không suy ra được từ `gt.txt` đã export vì file là per-frame sau interpolation, không phải danh sách keyframe gốc trong CVAT) |
+| Số keyframe trung bình mỗi track | `10` (không suy ra được từ `gt.txt` đã export vì file là per-frame sau interpolation, không phải danh sách keyframe gốc trong CVAT) |
 
 Ba tình huống khó nhất khi gán clip này, và bạn xử lý thế nào:
 
