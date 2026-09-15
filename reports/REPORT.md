@@ -25,9 +25,9 @@ Ba tình huống khó nhất khi gán clip này, và bạn xử lý thế nào:
 
 Ba lượt tua bắt được gì (lượt 1 nhìn ID, lượt 2 frame đầu/cuối, lượt 3 frame giữa):
 
-- Lượt 1: `...`
-- Lượt 2: `...`
-- Lượt 3: `...`
+- Lượt 1: `0 ID switch, 8/8 track khớp gold, không có ID nào bị trùng/tách.`
+- Lượt 2: `ID 4 (frame 149–151) và ID 8 (frame 169–171) còn bbox treo sau khi gold coi xe đã rời khung.`
+- Lượt 3: `cảnh báo track 3 gần như đứng im frame 1–15 (đứng yên thật hay quên bấm outside)`
 
 Kiểm chéo với: Không có — làm cá nhân, chưa có reviewer. `reports/review_partner.md` chưa tồn tại.
 Số lỗi bạn tìm được trong bản của bạn ấy: `N/A`. Số lỗi bạn ấy tìm được trong bản của bạn: `N/A`.
@@ -51,12 +51,12 @@ Ca nào hai người quyết khác nhau, và luật nào còn thiếu trong `GUI
 
 Qua cổng (`IDF1 >= 0.80`, `MOTA >= 0.75`, `MOTP >= 0.70`): **có**
 
-Danh sách lỗi từ `outputs/eval_vs_gold.json` (chưa sửa — gate đã đạt, ghi lại để cân nhắc rework tuỳ chọn):
+Danh sách lỗi từ `outputs/eval_vs_gold.json` (gate đã đạt, ghi lại để cân nhắc rework tuỳ chọn):
 
 | Loại lỗi | Frame | ID | Đã sửa thế nào |
 | --- | --- | --- | --- |
-| Bbox treo (còn box sau khi xe rời khung) | 149–151 | 4 | `...` |
-| Bbox treo (còn box sau khi xe rời khung) | 169–171 | 8 | `...` |
+| Bbox treo (còn box sau khi xe rời khung) | 149–151 | 4 | `remove tại sau 5-10 frame xe rời khung do số frame ít` |
+| Bbox treo (còn box sau khi xe rời khung) | 169–171 | 8 | `remove tại sau 5-10 frame xe rời khung do số frame ít` |
 | Thiếu đoạn (track gold 8 chỉ phủ 76%) | — | 8 | `...` |
 | Thiếu đoạn (track gold 5 chỉ phủ 78%) | — | 5 | `...` |
 
