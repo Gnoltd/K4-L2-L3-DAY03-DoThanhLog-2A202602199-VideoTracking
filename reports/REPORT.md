@@ -1,6 +1,6 @@
 # Báo cáo Ngày 3 — Tracking Annotation
 
-Họ tên / nhóm: `Do Thanh Long — 2A202602199` (làm cá nhân, không có nhóm)
+Họ tên / nhóm: `Do Thanh Long — 2A202602199` (làm cá nhân)
 Ngày: `2026-09-15`
 
 ---
